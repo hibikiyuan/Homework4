@@ -31,6 +31,8 @@
 ![image](./images/add_order.jpg)
 ##### 產生訂單明細
 ![image](./images/gen_word_order.jpg)
+##### 產生Word訂單檔
+![image](./images/word_order.jpg)
 ##### 找零功能
 ![image](./images/changes.jpg)
 
