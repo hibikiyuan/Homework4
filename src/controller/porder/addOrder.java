@@ -93,7 +93,7 @@ public class addOrder extends JFrame {
 		lblNewLabel.setFont(new Font("Lucida Grande", Font.BOLD, 18));
 		lblNewLabel.setForeground(new Color(0, 0, 0));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setBounds(0, 0, 465, 40);
+		lblNewLabel.setBounds(0, 0, 455, 40);
 		panel.add(lblNewLabel);
 		
 		JButton btnNewButton_3 = new JButton("回主選單");
@@ -101,6 +101,7 @@ public class addOrder extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				Tool.gotoPorderMain();
+				dispose();
 			}
 		});
 		btnNewButton_3.setBounds(351, 17, 114, 23);
