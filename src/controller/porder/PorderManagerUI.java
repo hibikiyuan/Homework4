@@ -182,7 +182,7 @@ public class PorderManagerUI extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				
 				//int Id=Integer.parseInt(deleteId.getText());
-				String order_no=updateId.getText();
+				String order_no=deleteId.getText();
 				porderserviceimpl.deletePorderByOrderNo(order_no);
 				if(porderserviceimpl != null) {
 					JOptionPane.showMessageDialog(null, "資料刪除完成");
