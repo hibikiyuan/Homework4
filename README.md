@@ -11,6 +11,7 @@
 #### 登入畫面
 ![image](./images/loginUI.jpg)
 ##### 登入失敗：提示需註冊會員
+![image](./images/login_error.jpg)
 ##### 登入成功
 
 #### 註冊新會員
