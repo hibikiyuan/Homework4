@@ -12,11 +12,9 @@ public class Verification {
 	boolean status=false;
 	public boolean checkLogin(String username, String password) {
 		m=(Member)Tool.read("member.txt");
-		//status=false;
 		if(!((username.equals(m.getUsername())) && password.equals(m.getPassword()))) {
 			JOptionPane.showMessageDialog(null, "無此帳號，請重新輸入");
 		} else {
-			//JOptionPane.showMessageDialog(null, "登入成功");
 			status=true;
 		}
 		return status;

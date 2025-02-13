@@ -157,7 +157,6 @@ public class PorderManagerUI extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				Date date = dateChooser.getDate();
-				//int Id=Integer.parseInt(updateId.getText());
 				String order_no=updateId.getText();
 				String Recipient = recipient.getText();
 				int Rose=Integer.parseInt(rose.getText());

@@ -58,9 +58,6 @@ public class PorderMainUI extends JFrame {
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				
-				//AddPorderUI apui = new AddPorderUI();
-				//apui.setVisible(true);
 				addOrder ao = new addOrder();
 				ao.setVisible(true);
 				dispose();

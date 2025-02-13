@@ -145,7 +145,8 @@ public class addOrder extends JFrame {
 		
 		JComboBox lavander = new JComboBox();
 		lavander.setBounds(111, 98, 73, 27);
-		lavander.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"}));
+		DefaultComboBoxModel<String> modelL = new DefaultComboBoxModel<>(t.setStringArray());
+		lavander.setModel(modelL);
 		panel_1.add(lavander);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("朵");
@@ -158,7 +159,8 @@ public class addOrder extends JFrame {
 		
 		JComboBox babysbreath = new JComboBox();
 		babysbreath.setBounds(111, 130, 73, 27);
-		babysbreath.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"}));
+		DefaultComboBoxModel<String> modelB = new DefaultComboBoxModel<>(t.setStringArray());
+		babysbreath.setModel(modelB);
 		panel_1.add(babysbreath);
 		
 		JLabel lblNewLabel_1_1_1 = new JLabel("朵");
@@ -171,7 +173,8 @@ public class addOrder extends JFrame {
 		
 		JComboBox rose = new JComboBox();
 		rose.setBounds(111, 162, 73, 27);
-		rose.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"}));
+		DefaultComboBoxModel<String> modelR = new DefaultComboBoxModel<>(t.setStringArray());
+		rose.setModel(modelR);
 		panel_1.add(rose);
 		
 		JLabel lblNewLabel_1_1_1_1 = new JLabel("朵");
@@ -194,14 +197,6 @@ public class addOrder extends JFrame {
 					JOptionPane.showMessageDialog(null, "無資料可供列印");
 				}
 				else {
-					/*
-					try {
-						output.print(null, null);
-					} catch (PrinterException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
-					*/
 					WordOrderForm wof = new WordOrderForm();
 					try {
 						wof.replaceText(porder);
@@ -246,31 +241,6 @@ public class addOrder extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				makechange.setText(t.calChanges(Integer.parseInt(payment.getText())));
-				/*
-				try {
-					String Payment=payment.getText();
-					String CusName = cusname.getText();
-					String LosartComboBox = lavander.getSelectedItem().toString();
-					Integer LCB = Integer.parseInt(LosartComboBox);
-					String CrestorComboBox = babysbreath.getSelectedItem().toString();
-					Integer CCB = Integer.parseInt(CrestorComboBox);
-					String AmepirideComboBox = rose.getSelectedItem().toString();
-					Integer ACB = Integer.parseInt(AmepirideComboBox);
-					Boolean M = member.isSelected();
-					nm=new Nightmarket(CusName,LCB,CCB,ACB,M);
-					if(nm.calChanges(Integer.parseInt(payment.getText()))=="") {
-						JOptionPane.showMessageDialog(null, "輸入金額小於帳單金額");
-					}else if (output.getText().equals("")) {
-						JOptionPane.showMessageDialog(null, "請先進行費用計算");
-					}
-					else {
-						makechange.setText(nm.calChanges(Integer.parseInt(payment.getText())));
-					}
-				}
-				catch(Exception ex) {
-					JOptionPane.showMessageDialog(null, "請先進行費用計算");
-				}
-				*/
 			}
 		});
 		printButton_1_1.setBounds(88, 386, 100, 29);

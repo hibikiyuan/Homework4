@@ -9,7 +9,7 @@ public interface MemberDao {
 		void add(Member member);
 		
 		//read
-		List<Member> selectAll();//select * from member
+		List<Member> selectAll();
 		List<Member> selectUsernameAndPassword(String username,String password);
 		List<Member> selectById(String id);
 		List<Member> selectByUsername(String username);

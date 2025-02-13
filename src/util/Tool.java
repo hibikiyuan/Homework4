@@ -8,6 +8,8 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
 
 import controller.porder.PorderMainUI;
 import model.Porder;
@@ -115,6 +117,29 @@ public class Tool {
 					"總金額：\t\t"+sum;
 		}
 		return msg;
+	}
+	
+	public String[] setStringArray() {
+		String[] arr = null;
+		List<String> listArr = new ArrayList<String>();
+		for(int i=0 ; i<=99 ; i++) {
+			listArr.add(String.valueOf(i));
+			arr = listArr.toArray(new String[i]);
+		}
+		
+		return arr; 
+		
+	}
+	
+	public String[] toStringArray(List<String> s) {
+		String[] arr = null;
+		List<String> listArr = new ArrayList<String>();
+		for(int i=0 ; i<=s.size() ; i++) {
+			listArr.add(String.valueOf(s));
+			arr = listArr.toArray(new String[i]);
+		}
+		
+		return arr;
 		
 	}
 }

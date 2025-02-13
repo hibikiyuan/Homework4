@@ -83,7 +83,6 @@ public class MemberDaoImpl implements MemberDao {
 			
 			if(resultset.next()) {
 				Member m=new Member();
-				//m.setId(resultset.getInt("id"));
 				m.setName(resultset.getString("name"));
 				m.setUsername(resultset.getString("username"));
 				m.setPassword(resultset.getString("password"));

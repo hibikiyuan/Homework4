@@ -154,8 +154,6 @@ public class AddPorderUI extends JFrame {
 		JLabel testLabel = new JLabel("New label");
 		testLabel.setBounds(62, 215, 197, 16);
 		contentPane.add(testLabel);
-		//Date date = dateChooser.getDate();
-		//testLabel.setText(DateFormat.getDateInstance().format(date));
 		
 		
 		clock();
@@ -166,11 +164,9 @@ public class AddPorderUI extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				
 				Date date = dateChooser.getDate();
-				//testLabel.setText(DateFormat.getDateInstance().format(date));
 				testLabel.setText(new SimpleDateFormat("yyyy-MM-dd").format(date));
 				
 				String Name=member.getName();
-				//String Order_date=order_date.getText();
 				String Delivery_date=delivery_date.getText();
 				String Recipient = recipient.getText();
 				int Lavander = Integer.parseInt(lavender.getText());
