@@ -1,5 +1,5 @@
 # GJun Java full-stack training course - Homework4
-### 利用Java串接MySQL，並使用SQL語法操作資料，建立簡易訂單系統。
+### 使用Java程式設計語言進行系統介面以及邏輯設計，透過JDBC串接MySQL資料庫，使用SQL語法操作資料，建立簡易訂單系統。
 ### 技術與工具清單
 - java jdk11
 - java JFrame
@@ -31,9 +31,9 @@
 ![image](./images/add_order.jpg)
 ##### 產生訂單明細
 ![image](./images/gen_word_order.jpg)
-##### 產生Word訂單檔
+##### 產生Word訂單檔(使用Apache POI套件)
 ![image](./images/word_order.jpg)
-##### 找零功能
+##### 輸入付款金額以及計算找零功能
 ![image](./images/changes.jpg)
 
 #### 訂單維護
